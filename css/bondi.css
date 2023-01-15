@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root{
+    --dark-color:#053742;
+    --blue-color:#39A2DB;
+    --blue-light:#A2DBFA;
+    --white-color:#E8F0F2;
+    --gray-color:#eee;
+    
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+/* Start navbar*/
+.navbar{
+    background-color: var(--blue-light);
+    padding-bottom: 0;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--dark-color);
+} 
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--white-color);
+    font-size: large;
+    transition: 0.5s;
+}
+.search svg {
+    color:var(--dark-color) ;
+}
+
+/*end navbar*/
+/* strat landing*/
+.land-page{
+background-color: var(--blue-light);
+min-height: calc(100vh - 72px);
+color: var(--dark-color);
+
+}
+.main-title{
+margin-bottom: 10rem;
+}
+.main-title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--blue-light);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*End landing */
+/* start features */
+.features .icon-holder{
+    height: 200px;
+    margin-right: 6em;
+
+}
+.features .icon-holder .svg{
+    left:50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 15rem;
+    color: var(--gray-color);
+    margin-left: -0.1em;
+}
+.features .icon-holder .icon{
+    color: var(--dark-color);
+}
+.features h4{
+    color: var(--dark-color);
+}
+/* end features */
+/* start our work */
+.our-work{
+    background-color: #e1f5ff;
+}
+.our-work ul .active{
+    background-color: var(--blue-color);
+    color: red;
+}
+.our-work ul li {
+    padding: 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: red;
+    background-color: var(--blue-color);
+    transition: 0.3s;
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-Work);
+    position: absolute;
+    background-color: #3eb3f129;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+    cursor: pointer;
+    
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+/* End our work */
+/* Start Stuff */
+.stuff .desc{
+    max-width: 500px;
+}
+/* End Stuff */
+/* start team */
+.team{
+    background-color: var(--blue-light);
+
+}
+.team h2{
+    color:var(--dark-color);
+}
+.team .box h4{
+    background-color: var(--gray-color);
+}
+
+/* end team */
+.project{
+    background-color: var(--dark-color);
+}
+
+/* Start Subscribe */
+.subs{
+    background-color: var(--blue-color);
+}
+.subs .input[type="text"]{
+    border-top: none;
+    border-bottom: 1px solid white;
+
+}
+.subs ::placeholder{
+    color: var(--white-color);
+}
+.subs input[type="submit"]
+{
+    background-color: var(--dark-color);
+    color:var(--blue-color);
+
+}
+/* End  Subscribe */
+/*start footer*/
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright >span{
+color: var(--gray-color);
+}
+
+
+/*end footer*/
